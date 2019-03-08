@@ -2,8 +2,8 @@ import ButtonView from '@ckeditor/ckeditor5-ui/src/button/buttonview';
 import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
 import LinkUI from '@ckeditor/ckeditor5-link/src/linkui';
 
-import internlinkIcon from 'ckeditor5-rexlink/theme/icons/internlink.svg';
-import medialinkIcon from 'ckeditor5-rexlink/theme/icons/medialink.svg';
+// import internlinkIcon from 'theme/icons/internlink.svg';
+// import medialinkIcon from 'theme/icons/medialink.svg';
 
 /**
  * @extends module:core/plugin~Plugin
@@ -62,7 +62,7 @@ export default class Rexlink extends Plugin {
 
         button.set({
             label: 'Internal link',
-            icon: internlinkIcon,
+            // icon: internlinkIcon,//theme/icons/internlink.svg
             withText: false,
             tooltip: true
         });
@@ -121,7 +121,7 @@ export default class Rexlink extends Plugin {
 
         button.set({
             label: 'Media link',
-            icon: medialinkIcon,
+            icon: path.resolve('theme', 'icon', 'medialink.svg' ),
             withText: false,
             tooltip: true
         });
